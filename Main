@@ -1,0 +1,32 @@
+package pbo_3_inherite;
+
+public class main {
+
+    public static void main(String[] args) {
+        //Deklarasi Tim
+        Tim Cheerleader = new Tim("Cheer leader");
+        
+        //Deklarasi Member
+        Member orang_1 = new Member("Dila", 20);
+        Member orang_2 = new Member("Vika", 23);
+        Member orang_3 = new Member("Afida", 22);
+        
+        //Deklarasi Trainee
+        Member orang_4 = new Trainee("Chea", 26, 8);
+        Member orang_5 = new Trainee("Liza", 21, 10);
+        Member orang_6 = new Trainee("Wulan", 30, 12);
+        
+        //Menambahkan data pada ArrayList
+        boynyutCheer.addMember(orang_1);
+        boynyutCheer.addMember(orang_2);
+        boynyutCheer.addMember(orang_3);
+        boynyutCheer.addMember(orang_4);
+        boynyutCheer.addMember(orang_5);
+        boynyutCheer.addMember(orang_6);
+        
+        //Output
+        boynyutCheer.displayFullMember();
+        boynyutCheer.displayTrainee();
+    }
+    
+}
